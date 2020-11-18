@@ -38,7 +38,7 @@ const Global = createGlobalStyle`
     left: 50%;
     transform-origin: center;
     animation: bgmove 5s infinite;
-    animation-timing-function: cubic-bezier(0.33, -0.29, 0.79, 1.46);
+    animation-timing-function: cubic-bezier(0.65, 0.01, 0.36, 1);
   }
 
   @keyframes bgmove {
@@ -46,7 +46,7 @@ const Global = createGlobalStyle`
       transform: translate(-50%, -50%) rotate(45deg) scale(1);
     }
     50% {
-      transform: translate(calc(-50% + 200px), calc(-50% + 100px)) rotate(45deg) scale(1);
+      transform: translate(calc(-50% + 200px), calc(-50% + 100px)) rotate(45deg) scale(0.8);
     }
     100% {
       transform: translate(-50%, -50%) rotate(45deg) scale(1);
